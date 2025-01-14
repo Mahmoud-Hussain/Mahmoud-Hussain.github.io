@@ -31,7 +31,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 nav ul li {
@@ -64,6 +63,10 @@ section {
 section.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+.about-me {
+    text-align: center; /* Center-align the About Me section */
 }
 
 .projects-grid {
@@ -142,7 +145,7 @@ section.fade-in {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
+social-links a:hover {
     transform: scale(1.1);
     color: #e94560;
 }
