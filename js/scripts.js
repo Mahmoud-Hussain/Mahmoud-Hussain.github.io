@@ -47,4 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const header = document.querySelector('header');
         header.style.backgroundPositionY = `${globalThis.scrollY * 0.5}px`;
     });
+
+    // Ensure the "About Me" section fades in smoothly
+    const aboutSection = document.querySelector('#about .about-details');
+    aboutSection.classList.add('fade-in');
+    aboutSection.style.whiteSpace = 'normal'; // Allow text to wrap after animation
+    aboutSection.style.border = 'none'; // Remove border after animation
 });

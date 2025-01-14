@@ -69,6 +69,40 @@ section.fade-in {
     text-align: center; /* Center-align the About Me section */
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-me-image {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-me-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-details {
+    max-width: 55%;
+    animation: fadeIn 3s ease-out;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure all text is visible */
+    border: none; /* Remove border */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -145,7 +179,7 @@ section.fade-in {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-social-links a:hover {
+.social-links a:hover {
     transform: scale(1.1);
     color: #e94560;
 }
