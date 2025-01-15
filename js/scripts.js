@@ -53,4 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
     aboutSection.classList.add('fade-in');
     aboutSection.style.whiteSpace = 'normal'; // Allow text to wrap after animation
     aboutSection.style.border = 'none'; // Remove border after animation
+
+    // Toggle navigation menu on mobile view
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
 });
