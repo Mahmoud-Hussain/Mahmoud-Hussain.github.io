@@ -179,7 +179,7 @@ section.fade-in {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
+social-links a:hover {
     transform: scale(1.1);
     color: #e94560;
 }
@@ -210,8 +210,28 @@ footer {
         margin: 10px auto;
     }
 
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav ul li {
-        margin: 10px 5px;
+        margin: 10px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-image {
+        max-width: 80%;
+        margin: 0 0 20px 0;
+    }
+
+    .about-details {
+        max-width: 100%;
+        text-align: center;
     }
 
     .icons i, .icons img {
