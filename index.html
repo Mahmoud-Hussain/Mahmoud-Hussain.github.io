@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Hussain | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">MH<span class="neon-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container hero-content">
+            <h3 class="greeting">Hello, I'm</h3>
+            <h1 class="name neon-text">Mahmoud Hussain</h1>
+            <h2 class="title">I'm a <span class="typing-text"></span></h2>
+            <p class="description">
+                Passionate about coding and creativity. I thrive at the intersection of design and technology, building impactful projects. Currently working as a 2D graphics designer at <a href="https://www.facebook.com/luminosoevents6" target="_blank" class="neon-link">Luminoso Events</a> <a href="https://www.instagram.com/luminosoevent/?hl=en" target="_blank" class="neon-link"><i class="fab fa-instagram"></i></a>.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-neon">View My Work</a>
+                <a href="#contact" class="btn btn-glass">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-circle circle-1"></div>
+            <div class="glass-circle circle-2"></div>
+            <div class="code-card glass-card">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <span class="property">name</span>: <span class="string">"Mahmoud"</span>,
+    <span class="property">skills</span>: [<span class="string">"Code"</span>, <span class="string">"Design"</span>],
+    <span class="property">status</span>: <span class="string">"Building..."</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About <span class="neon-highlight">Me</span></h2>
+            <div class="about-content glass-card">
+                <div class="about-text">
+                    <p>
+                        I’m Mahmoud Hussain, a Computer Science & Engineering student passionate about coding and creativity. Whether crafting seamless interfaces, designing stunning graphics, or building impactful projects, I bring dedication and curiosity to every endeavor.
+                    </p>
+                    <p>
+                        Currently, I am working as a 2D graphics designer at <a href="https://www.facebook.com/luminosoevents6" target="_blank" class="neon-link">Luminoso Events</a> <a href="https://www.instagram.com/luminosoevent/?hl=en" target="_blank" class="neon-link"><i class="fab fa-instagram"></i></a>. I thrive at the intersection of design and technology, combining my skills in graphics design with a love for solving problems through code. Always eager to learn, I aim to contribute innovative solutions to the tech world. Let’s create something extraordinary together!
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">HTML/CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">JavaFX</div>
+                        <div class="skill-item">Canvas</div>
+                        <div class="skill-item">Graphics Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="neon-highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Graphics Design -->
+                <div class="project-card glass-card">
+                    <div class="project-image" style="background-image: url('assets/images/1.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Graphics Design</h3>
+                        <p>A collection of my creative graphic design work, including wedding stage designs and more.</p>
+                        <div class="project-tags">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="graphics.html" class="btn btn-neon" style="padding: 8px 20px; font-size: 0.9rem;">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basic Shooting Game -->
+                <div class="project-card glass-card">
+                    <div class="project-image" style="background-image: url('games/shooting-game/game.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Space Shooter</h3>
+                        <p>A classic 2D shooting game built with HTML5 Canvas and JavaScript. Survive the space battle!</p>
+                        <div class="project-tags">
+                            <span>HTML5 Canvas</span>
+                            <span>JavaScript</span>
+                            <span>Game Dev</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="games/shooting-game/index.html" target="_blank" class="btn btn-neon" style="padding: 8px 20px; font-size: 0.9rem;">Play Game</a>
+                            <a href="https://github.com/Mahmoud-Hussain/Basic-shooting-game" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Space Colliders -->
+                <div class="project-card glass-card">
+                    <div class="project-image" style="background-image: url('assets/images/spacecolliders.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Space Colliders</h3>
+                        <p>A thrilling space survival game built with Python. Runs in browser via Pygbag/WebAssembly!</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>WebAssembly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mahmoud-Hussain/Space-Colliders" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flashcard App -->
+                <div class="project-card glass-card">
+                    <div class="project-image" style="background-image: url('assets/images/flashcard_preview.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flashcard App</h3>
+                        <p>Lightweight browser app to create & review flashcards. No install — just open and study.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mahmoud-hussain.github.io/flashcard/" target="_blank" class="icon-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Mahmoud-Hussain/flashcard" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RideHop -->
+                <div class="project-card glass-card">
+                    <div class="project-image placeholder-image">
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%; font-size: 3rem;">🚗</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>RideHop</h3>
+                        <p>JavaFX carpool prototype — connects riders and drivers for shared trips.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>Maven</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mahmoud-Hussain/RideHop" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Activity -->
+    <section id="github-activity" class="github-section">
+        <div class="container">
+            <h2 class="section-title">GitHub <span class="neon-highlight">Activity</span></h2>
+            <div class="calendar glass-card">
+                <!-- Loading text -->
+                Loading the data just for you.
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <h2 class="section-title">Get In <span class="neon-highlight">Touch</span></h2>
+            <div class="contact-wrapper glass-card" style="display: flex; justify-content: center; padding: 40px;">
+                <div class="social-links-large">
+                    <a href="https://www.facebook.com/mhbaws" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/Mahmoud-Hussain" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/01836288874" target="_blank" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Mahmoud Hussain.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
