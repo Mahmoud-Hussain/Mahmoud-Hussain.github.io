@@ -823,7 +823,8 @@ body.light-mode .social-links-large .social-icon:hover {
 
 @media (max-width: 600px) {
     .hero-text .name {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        /* Reduced to fit mobile */
     }
 
     .hero-text .title {
@@ -883,5 +884,15 @@ body.light-mode .neon-link:hover {
         height: 3px;
         background-color: #fff;
         margin: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-text .name {
+        font-size: 1.5rem;
+    }
+
+    .hero-text .title {
+        font-size: 1rem;
     }
 }
